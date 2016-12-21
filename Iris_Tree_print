@@ -1,0 +1,17 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Nov  9 21:18:05 2016
+
+@author: Raabe
+"""
+
+from sklearn.datasets import load_iris
+iris = load_iris()
+print (iris.feature_names)
+#shows all the available features of the dataset.
+print (iris.target_names)
+# shows all the possible labels.
+print (iris.data[1])
+print (iris.target[1])
+for i in range(len(iris.target)):
+    print ("Example %d: label %s, features: %s" % (i, iris.target[i], iris.data[i]))
